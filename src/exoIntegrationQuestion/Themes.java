@@ -17,4 +17,8 @@ public class Themes {
 	public void ajouterQuestion(Question nouvelleQuestion) {
 		this.listQuestion.add(nouvelleQuestion);
 	}
+	
+	public void supprimerQuestion(int index) {
+		this.listQuestion.remove(index);
+	}
 }
