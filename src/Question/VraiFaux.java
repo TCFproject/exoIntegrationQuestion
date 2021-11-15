@@ -27,7 +27,7 @@ public class VraiFaux extends Question {
 	@Override
 	public String reponse() {
 		// TODO Auto-generated method stub
-		return "le niveau est de "+String.valueOf(this.niveau)+" cette question est : "
+		return "Vrai/Faux de niveau "+String.valueOf(this.niveau)+" cette question est : "
 				+ String.valueOf(valide);
 	}
 }

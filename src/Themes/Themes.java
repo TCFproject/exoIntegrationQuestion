@@ -1,0 +1,59 @@
+package Themes;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+import Question.Question;
+
+public class Themes {
+	private List<Theme> listThemes = new ArrayList<>();
+
+	public Themes() {
+		// TODO Auto-generated constructor stub
+		this.listThemes.add(new Theme("Histoire"));
+		this.listThemes.add(new Theme("Sport"));
+		this.listThemes.add(new Theme("Science"));
+		this.listThemes.add(new Theme("Art"));
+		this.listThemes.add(new Theme("Mode"));
+		this.listThemes.add(new Theme("Nature"));
+		this.listThemes.add(new Theme("Film"));
+		this.listThemes.add(new Theme("Serie"));
+		this.listThemes.add(new Theme("Manga"));
+		this.listThemes.add(new Theme("Comics"));
+	}
+
+	public int getIndiceTheme() {
+		Scanner obj = new Scanner(System.in);
+		String read = obj.nextLine();
+		Theme reschTheme = null;
+		for (Theme theme : listThemes) {
+			if (theme.getLibelle().equals(read)) {
+				reschTheme = theme;
+			}
+		}
+		return this.listThemes.indexOf(reschTheme);
+	}
+
+	public List<Theme> list5themes() {
+		List<Theme> retTheme = new ArrayList<>();
+		retTheme.add(this.listThemes.get(getIndiceTheme()));
+		return retTheme;
+	}
+
+	public void addQuestionTheme(int index, Question question) {
+		this.listThemes.get(index).ajouterQuestion(question);
+	}
+
+	public void addQuestionTheme(int index, List<Question> question) {
+		this.listThemes.get(index).ajouterQuestion(question);
+	}
+
+	public String lesThemes() {
+		StringBuilder sb = new StringBuilder();
+		for (Theme theme : listThemes) {
+			sb.append(String.valueOf(this.listThemes.indexOf(theme)) + "-" + theme.getLibelle() + "\n");
+		}
+		return "Les themes sont :\n" + sb.toString();
+	}
+}

@@ -33,7 +33,7 @@ public class QCM extends Question {
 	@Override
 	public String reponse() {
 		// TODO Auto-generated method stub
-		return "le niveau est de "+String.valueOf(this.niveau)+"les réponses sont : " + 
+		return "QCM de niveau "+String.valueOf(this.niveau)+", les réponses sont : " + 
 				this.les3réponses[0] + ", " + this.les3réponses[1] + ", "
 				+ this.les3réponses[2] + " la bonne est la "+ String.valueOf(this.NbonneReponse);
 	}

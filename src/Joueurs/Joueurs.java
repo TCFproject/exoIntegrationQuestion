@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import exoIntegrationQuestion.Etat;
+import Enum.Etat;
 public class Joueurs {
 	
 	private List<Joueur> listJoueur = new ArrayList<>();

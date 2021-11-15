@@ -25,7 +25,7 @@ public class ReponseCourte extends Question {
 	@Override
 	public String reponse() {
 		// TODO Auto-generated method stub
-		return "le niveau est de "+String.valueOf(this.niveau)+ " la réponse est : "
+		return "Réponse courte de niveau "+String.valueOf(this.niveau)+ " la réponse est : "
 				+this.reponse;
 	}
 }

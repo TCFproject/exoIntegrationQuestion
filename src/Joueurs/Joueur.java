@@ -1,6 +1,6 @@
 package Joueurs;
 
-import exoIntegrationQuestion.Etat;
+import Enum.Etat;
 
 public class Joueur {
 	private int numCandidat;
