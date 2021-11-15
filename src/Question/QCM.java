@@ -1,17 +1,40 @@
 package Question;
 
+import Exception.MauvaisTypeDeReponseException;
+import Exception.OutOfRangeException;
+
 public class QCM extends Question {
 
-	public QCM(String libelle, int niveau, String reponse) {
+	private String[] les3réponses;
+	private int NbonneReponse;
+
+	public QCM(String libelle, int niveau, String[] les3réponses, int NbonneReponse) throws OutOfRangeException {
 		// TODO Auto-generated constructor stub
 		this.libelle = libelle;
 		this.niveau = niveau;
-		this.reponse = reponse;
+		this.les3réponses = les3réponses;
+		if (NbonneReponse > 3 || NbonneReponse < 1) {
+			throw new OutOfRangeException();
+		} else {
+			this.NbonneReponse = NbonneReponse;
+		}
 	}
 
 	@Override
-	public void repondre() {
+	public void repondre(int reponse) throws MauvaisTypeDeReponseException {
 		// TODO Auto-generated method stub
-		System.out.println("Donner une réponse entre a ou b ou c");
+		if (this.NbonneReponse == reponse) {
+			System.out.print("Bonne Réponse");
+		} else {
+			System.out.print("Mauvaise Réponse");
+		}
+	}
+
+	@Override
+	public String reponse() {
+		// TODO Auto-generated method stub
+		return "le niveau est de "+String.valueOf(this.niveau)+"les réponses sont : " + 
+				this.les3réponses[0] + ", " + this.les3réponses[1] + ", "
+				+ this.les3réponses[2] + " la bonne est la "+ String.valueOf(this.NbonneReponse);
 	}
 }

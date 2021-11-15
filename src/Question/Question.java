@@ -1,14 +1,21 @@
 package Question;
 
+import Exception.MauvaisTypeDeReponseException;
+
 public abstract class Question {
 
 	protected String libelle;
 	protected int niveau;
-	protected String reponse;
 	
-	public String reponse() {
-		return "La question est : "+this.libelle+" de niveau : "+this.niveau;
+	public abstract String reponse();
+	
+	public void repondre(String reponse) throws MauvaisTypeDeReponseException{
+		throw new MauvaisTypeDeReponseException();
 	};
-	
-	public abstract void repondre();
+	public void repondre(int reponse) throws MauvaisTypeDeReponseException{
+		throw new MauvaisTypeDeReponseException();
+	};
+	public void repondre(boolean reponse) throws MauvaisTypeDeReponseException{
+		throw new MauvaisTypeDeReponseException();
+	};
 }

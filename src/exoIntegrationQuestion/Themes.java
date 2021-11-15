@@ -1,22 +1,20 @@
 package exoIntegrationQuestion;
 
 import java.util.ArrayList;
+import java.util.List;
+
+import Question.Question;
 
 public class Themes {
-	private ArrayList<String> themes = new ArrayList<>();
+	private String themes;
+	private List<Question> listQuestion = new ArrayList<>();
 	
-	public Themes(String libelle) {
+	public Themes(String themes) {
 		// TODO Auto-generated constructor stub
-		if (!themeExist(libelle)) {
-			this.themes.add(libelle);
-		}
+		this.themes = themes;
 	}
 	
-	/*public String selectTheme(String theme) {
-		return this.th
-	}*/
-	
-	private boolean themeExist(String theme) {
-		return themes.contains(theme);
+	public void ajouterQuestion(Question nouvelleQuestion) {
+		this.listQuestion.add(nouvelleQuestion);
 	}
 }
