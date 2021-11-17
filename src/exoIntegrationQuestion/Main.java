@@ -20,5 +20,6 @@ public class Main {
 		Joueurs lesJoueurs = new Joueurs();
 		lesJoueurs.selection();
 		System.out.println(lesJoueurs.afficheJoueurSelectionner());
+
 	}
 }

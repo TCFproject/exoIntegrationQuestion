@@ -16,8 +16,8 @@ public class Joueur {
 		this.etat = etat;
 	}
 	
-	public String présentation() {
-		return "Candidat n°"+String.valueOf(this.numCandidat)+
+	public String presentation() {
+		return "Candidat n"+String.valueOf(this.numCandidat)+
 				", nom : "+this.nom+
 				", score : "+String.valueOf(score)+
 				", est actuellement "+ String.valueOf(this.etat);

@@ -41,9 +41,9 @@ public class Joueurs {
 	public String afficheJoueurSelectionner() {
 		StringBuilder sb = new StringBuilder();
 		for (Joueur joueur : listSelectionner()) {
-			sb.append(joueur.présentation()+"\r\n");
+			sb.append(joueur.presentation()+"\r\n");
 		}
-		return "Les joueurs séléctionnés sont :r\n"+ sb.toString();
+		return "Les joueurs sï¿½lï¿½ctionnï¿½s sont :r\n"+ sb.toString();
 	}
 	
 	private int randomSizePlayer() {

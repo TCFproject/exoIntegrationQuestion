@@ -16,16 +16,16 @@ public class ReponseCourte extends Question {
 	public void repondre(String reponse) throws MauvaisTypeDeReponseException {
 		// TODO Auto-generated method stub
 		if (this.reponse.equals(reponse)) {
-			System.out.print("Bonne Réponse");
+			System.out.print("Bonne Reponse");
 		}else {
-			System.out.print("Mauvaise Réponse");
+			System.out.print("Mauvaise Reponse");
 		}
 	}
 
 	@Override
 	public String reponse() {
 		// TODO Auto-generated method stub
-		return "Réponse courte de niveau "+String.valueOf(this.niveau)+ " la réponse est : "
+		return "Reponse courte de niveau "+String.valueOf(this.niveau)+ " la reponse est : "
 				+this.reponse;
 	}
 }

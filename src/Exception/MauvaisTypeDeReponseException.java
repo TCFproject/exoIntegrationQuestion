@@ -1,5 +1,7 @@
 package Exception;
+    public class MauvaisTypeDeReponseException extends Exception {
 
-public class MauvaisTypeDeReponseException extends Exception {
+    }
 
-}
+
+

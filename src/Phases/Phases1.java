@@ -18,7 +18,7 @@ public class Phases1 implements Phase {
 	}
 
 	@Override
-	public void déroulementJeu() {
+	public void deroulementJeu() {
 		// TODO Auto-generated method stub
 
 	}
