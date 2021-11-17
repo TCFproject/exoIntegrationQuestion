@@ -24,6 +24,7 @@ public class Themes {
 	}
 
 	public int getIndiceTheme() {
+		System.out.print("Donner un theme : ");
 		Scanner obj = new Scanner(System.in);
 		String read = obj.nextLine();
 		Theme reschTheme = null;
@@ -51,8 +52,8 @@ public class Themes {
 
 	public String lesThemes() {
 		StringBuilder sb = new StringBuilder();
-		for (Theme theme : listThemes) {
-			sb.append(String.valueOf(this.listThemes.indexOf(theme)) + "-" + theme.getLibelle() + "\n");
+		for (Theme theme : this.listThemes) {
+			sb.append(String.valueOf(this.listThemes.indexOf(theme)+1) + "-" + theme.getLibelle() + "\n");
 		}
 		return "Les themes sont :\n" + sb.toString();
 	}
