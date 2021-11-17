@@ -36,10 +36,8 @@ public class Themes {
 		return this.listThemes.indexOf(reschTheme);
 	}
 
-	public List<Theme> list5themes() {
-		List<Theme> retTheme = new ArrayList<>();
-		retTheme.add(this.listThemes.get(getIndiceTheme()));
-		return retTheme;
+	public Theme getUnTheme(int unTheme) {
+		return this.listThemes.get(unTheme);
 	}
 
 	public void addQuestionTheme(int index, Question question) {

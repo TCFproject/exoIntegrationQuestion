@@ -7,10 +7,11 @@ import java.util.Random;
 import Enum.Etat;
 public class Joueurs {
 	
-	private List<Joueur> listJoueur = new ArrayList<>();
+	private List<Joueur> listJoueur;
 	
 	public Joueurs() {
 		// TODO Auto-generated constructor stub
+		this.listJoueur = new ArrayList<>();
 		int j = 0;
 		for (char i = 'A'; i <= 'Z'; i++) {
 			j++;
@@ -41,9 +42,9 @@ public class Joueurs {
 	public String afficheJoueurSelectionner() {
 		StringBuilder sb = new StringBuilder();
 		for (Joueur joueur : listSelectionner()) {
-			sb.append(joueur.présentation()+"\r\n");
+			sb.append(joueur.présentation()+"\n");
 		}
-		return "Les joueurs séléctionnés sont :r\n"+ sb.toString();
+		return "Les joueurs séléctionnés sont :\n"+ sb.toString();
 	}
 	
 	private int randomSizePlayer() {

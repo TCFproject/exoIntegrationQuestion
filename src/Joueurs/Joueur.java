@@ -34,4 +34,8 @@ public class Joueur {
 	public Etat getEtat() {
 		return etat;
 	}
+	
+	public String getNom() {
+		return nom;
+	}
 }
