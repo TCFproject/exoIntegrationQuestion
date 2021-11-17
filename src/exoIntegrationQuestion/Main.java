@@ -21,7 +21,7 @@ public class Main {
 		try {
 			uneListQuestion.add(new QCM("A?",2,new String[] {"A","B","C"},1));
 			leThemes.addQuestionTheme(leThemes.getIndiceTheme(), uneListQuestion);
-		} catch (OutOfRangeException e) {
+		} catch (OutOfRangeException e) { 
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
