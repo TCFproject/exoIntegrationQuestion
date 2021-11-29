@@ -40,4 +40,8 @@ public class Theme {
 	public String getLibelle() {
 		return libelle;
 	}
+	
+	public List<Question> getListQuestion() {
+		return listQuestion;
+	}
 }

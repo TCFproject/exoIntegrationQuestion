@@ -37,6 +37,7 @@ public class Phases1 implements Phase {
 		System.out.println(unTheme.getLibelle());
 		for (Joueur joueurs : this.lesParticipants.listSelectionner()) {
 			System.out.println("Le joueur "+joueurs.getNom()+" commence");
+			//System.out.println(unTheme.getListQuestion().get(1).reponse());
 		}
 	}
 
