@@ -15,9 +15,9 @@ public class VraiFaux extends Question {
 	}
 	
 	@Override
-	public void repondre(boolean reponse) throws MauvaisTypeDeReponseException {
+	public void repondre(String reponse) throws MauvaisTypeDeReponseException {
 		// TODO Auto-generated method stub
-		if (reponse == valide) {
+		if (Boolean.getBoolean(reponse) == valide) {
 			System.out.print("Bonne Réponse");
 		}else {
 			System.out.print("Mauvaise Réponse");

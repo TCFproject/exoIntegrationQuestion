@@ -26,9 +26,9 @@ public class Main {
 			e.printStackTrace();
 		}
 	/*************************************************************************************/	
-		Joueur unJoueur = new Joueur(1,"A",0,Etat.Attente);
+		//Joueur unJoueur = new Joueur(1,"A",0,Etat.Attente);
 		Joueurs lesJoueurs = new Joueurs();
 		lesJoueurs.selection();
-		System.out.println(lesJoueurs.listSelectionner());
+		System.out.println(lesJoueurs.afficheJoueurSelectionner());
 	}
 }

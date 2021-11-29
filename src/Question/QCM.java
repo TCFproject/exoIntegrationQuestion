@@ -21,9 +21,9 @@ public class QCM extends Question {
 	}
 
 	@Override
-	public void repondre(int reponse) throws MauvaisTypeDeReponseException {
+	public void repondre(String reponse) throws MauvaisTypeDeReponseException {
 		// TODO Auto-generated method stub
-		if (this.NbonneReponse == reponse) {
+		if (this.NbonneReponse == Integer.parseInt(reponse)) {
 			System.out.print("Bonne Réponse");
 		} else {
 			System.out.print("Mauvaise Réponse");

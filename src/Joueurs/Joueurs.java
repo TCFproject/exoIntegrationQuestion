@@ -31,7 +31,7 @@ public class Joueurs {
 	
 	public List<Joueur> listSelectionner(){
 		List<Joueur> listSelectionner = new ArrayList<>();
-		for (Joueur joueur : listSelectionner) {
+		for (Joueur joueur : this.listJoueur) {
 			if (joueur.getEtat().equals(Etat.Selectionner)) {
 				listSelectionner.add(joueur);
 			}

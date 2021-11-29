@@ -19,7 +19,7 @@ public class Joueur {
 	public String présentation() {
 		return "Candidat n°"+String.valueOf(this.numCandidat)+
 				", nom : "+this.nom+
-				", score : "+String.valueOf(score)+
+				", score : "+String.valueOf(this.score)+
 				", est actuellement "+ String.valueOf(this.etat);
 	}
 	

@@ -11,11 +11,5 @@ public abstract class Question {
 	
 	public void repondre(String reponse) throws MauvaisTypeDeReponseException{
 		throw new MauvaisTypeDeReponseException();
-	};
-	public void repondre(int reponse) throws MauvaisTypeDeReponseException{
-		throw new MauvaisTypeDeReponseException();
-	};
-	public void repondre(boolean reponse) throws MauvaisTypeDeReponseException{
-		throw new MauvaisTypeDeReponseException();
-	};
+	}
 }
