@@ -24,7 +24,7 @@ public class Joueur {
 	}
 	
 	public void setScore(int score) {
-		this.score = score;
+		this.score += score;
 	}
 	
 	public void setEtat(Etat etat) {

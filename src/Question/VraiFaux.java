@@ -15,13 +15,14 @@ public class VraiFaux extends Question {
 	}
 	
 	@Override
-	public void repondre(String reponse) throws MauvaisTypeDeReponseException {
+	public boolean repondre(String reponse) throws MauvaisTypeDeReponseException {
 		// TODO Auto-generated method stub
 		if (Boolean.getBoolean(reponse) == valide) {
 			System.out.print("Bonne Réponse");
 		}else {
 			System.out.print("Mauvaise Réponse");
 		}
+		return Boolean.getBoolean(reponse) == valide;
 	}
 
 	@Override

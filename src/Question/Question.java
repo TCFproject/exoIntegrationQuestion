@@ -9,7 +9,7 @@ public abstract class Question {
 	
 	public abstract String reponse();
 	
-	public void repondre(String reponse) throws MauvaisTypeDeReponseException{
+	public boolean repondre(String reponse) throws MauvaisTypeDeReponseException{
 		throw new MauvaisTypeDeReponseException();
 	}
 }

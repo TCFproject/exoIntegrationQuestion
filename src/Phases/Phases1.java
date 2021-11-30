@@ -1,7 +1,9 @@
 package Phases;
 
 import java.util.Random;
+import java.util.Scanner;
 
+import Exception.MauvaisTypeDeReponseException;
 import Interfaces.Phase;
 import Joueurs.Joueur;
 import Joueurs.Joueurs;
@@ -37,7 +39,15 @@ public class Phases1 implements Phase {
 		System.out.println(unTheme.getLibelle());
 		for (Joueur joueurs : this.lesParticipants.listSelectionner()) {
 			System.out.println("Le joueur "+joueurs.getNom()+" commence");
-			//System.out.println(unTheme.getListQuestion().get(1).reponse());
+			Question laQuestionAPoser = unTheme.getListQuestion().get(0);
+			try {
+				if (laQuestionAPoser.repondre(new Scanner(System.in).nextLine())) {
+					joueurs.setScore(2);
+				}
+			} catch (MauvaisTypeDeReponseException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 	}
 

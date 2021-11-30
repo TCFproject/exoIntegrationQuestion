@@ -13,13 +13,14 @@ public class ReponseCourte extends Question {
 	}
 	
 	@Override
-	public void repondre(String reponse) throws MauvaisTypeDeReponseException {
+	public boolean repondre(String reponse) throws MauvaisTypeDeReponseException {
 		// TODO Auto-generated method stub
 		if (this.reponse.equals(reponse)) {
 			System.out.print("Bonne Réponse");
 		}else {
 			System.out.print("Mauvaise Réponse");
 		}
+		return this.reponse.equals(reponse);
 	}
 
 	@Override

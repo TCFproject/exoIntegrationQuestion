@@ -21,13 +21,15 @@ public class QCM extends Question {
 	}
 
 	@Override
-	public void repondre(String reponse) throws MauvaisTypeDeReponseException {
+	public boolean repondre(String reponse) throws MauvaisTypeDeReponseException {
 		// TODO Auto-generated method stub
+
 		if (this.NbonneReponse == Integer.parseInt(reponse)) {
 			System.out.print("Bonne Réponse");
-		} else {
+		}else {
 			System.out.print("Mauvaise Réponse");
 		}
+		return this.NbonneReponse == Integer.parseInt(reponse);
 	}
 
 	@Override
