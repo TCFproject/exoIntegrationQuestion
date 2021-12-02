@@ -8,7 +8,9 @@ public abstract class Question {
 	protected int niveau;
 	
 	public abstract String reponse();
-	
+	public String getLibelle() {
+		return libelle;
+	}
 	public boolean repondre(String reponse) throws MauvaisTypeDeReponseException{
 		throw new MauvaisTypeDeReponseException();
 	}
